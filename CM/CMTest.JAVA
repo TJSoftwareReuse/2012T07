@@ -4,7 +4,6 @@ import cm.CM;
 import org.junit.Test;
 import java.io.IOException;
 
-
 /**
  * Created by soap on 15/4/25.
  */
