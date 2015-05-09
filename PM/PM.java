@@ -11,6 +11,7 @@ import java.util.TimerTask;
 public class PM {
 
 	private static Map<String, Integer> map = new HashMap<String, Integer>();
+	public static String path;
 	private static Thread th;
 	private static myThread mt = new myThread(map);
 
@@ -35,6 +36,9 @@ public class PM {
 		th = null;
 	}
 
+	public static void setPath(String _path){
+		path = _path;
+	}
 	
 	static class myThread implements Runnable {
 		private static Map<String, Integer> map = new HashMap<String, Integer>();
@@ -56,7 +60,7 @@ public class PM {
 								"yyyy-MM-dd-hh-mm-ss");
 						String myTime = sdFormat.format(date);
 
-						String fileName = "D:/PM/PM" + myTime + ".txt";
+						String fileName = path +"/pm"+ myTime + ".txt";
 						File file = new File(fileName);
 						file.createNewFile();
 
@@ -70,7 +74,7 @@ public class PM {
 						fw.close();
 						map.clear();
 					} catch (Exception e) {
-						// TODO: handle exception
+						
 					}
 				}
 			}, 60000, 60000);
@@ -80,14 +84,17 @@ public class PM {
 			t.cancel();
 		}
 	}
+	
 
-//	public static void main(String[] args) {
-//		PM.start();
-//		PM.addItem("power", 100);
-//		PM.addItem("power", 100);
-//		PM.addItem("power", 500);
-//		PM.addItem("product", 50);
-//		PM.addItem("product", 100);
-//
-//	}
+	// public static void main(String[] args) {
+	// 	PM.start();
+	// 	PM.setPath("D:/pm");
+	// 	PM.addItem("power", 100);
+	// 	PM.addItem("power", 100);
+	// 	PM.addItem("power", 500);
+	// 	PM.addItem("product", 50);
+	// 	PM.addItem("product", 100);
+
+	}
+
 }
