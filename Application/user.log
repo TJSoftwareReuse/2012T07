@@ -1,0 +1,16 @@
+1 [DEBUG] -this is a message
+  2 [INFO] -this is a message
+  2 [WARN] -this is a message
+  2 [ERROR] -this is a message
+  2 [FATAL] -this is a message
+  (2015-05-14 13:13:17,896)0 [DEBUG] -this is a message
+  (2015-05-14 13:13:17,900)4 [INFO] -this is a message
+  (2015-05-14 13:13:17,900)4 [WARN] -this is a message
+  (2015-05-14 13:13:17,901)5 [ERROR] -this is a message
+  (2015-05-14 13:13:17,901)5 [FATAL] -this is a message
+  (2015-05-14 13:14:00,532) [DEBUG] -this is a message
+  (2015-05-14 13:14:00,534) [INFO] -this is a message
+  (2015-05-14 13:14:00,534) [WARN] -this is a message
+  (2015-05-14 13:14:00,534) [ERROR] -this is a message
+  (2015-05-14 13:14:00,535) [FATAL] -this is a message
+  
