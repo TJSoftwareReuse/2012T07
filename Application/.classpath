@@ -5,7 +5,7 @@
 	<classpathentry kind="lib" path="lib/CM1.1.jar"/>
 	<classpathentry kind="lib" path="lib/fm.jar"/>
 	<classpathentry kind="lib" path="lib/License.jar"/>
-	<classpathentry kind="lib" path="lib/PM.jar"/>
 	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
+	<classpathentry kind="lib" path="lib/PM.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

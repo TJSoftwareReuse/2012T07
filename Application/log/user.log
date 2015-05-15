@@ -1,0 +1,37 @@
+(2015-05-15 15:34:14,501) [INFO] -search "q"
+  (2015-05-15 15:34:14,502) [INFO] -Service permitted
+  (2015-05-15 15:34:14,502) [INFO] -failed search
+
+  (2015-05-15 15:34:23,484) [INFO] -search "q"
+  (2015-05-15 15:34:23,484) [INFO] -Service permitted
+  (2015-05-15 15:34:23,484) [INFO] -failed search
+
+  (2015-05-15 15:36:48,982) [INFO] -search "q"
+  (2015-05-15 15:36:48,983) [INFO] -Service permitted
+  (2015-05-15 15:36:48,984) [INFO] -failed search
+
+  (2015-05-15 15:43:49,441) [INFO] -search "·½³Ì"
+  (2015-05-15 15:43:49,441) [INFO] -Service permitted
+  (2015-05-15 15:43:49,441) [INFO] -Successful search
+
+  (2015-05-15 15:46:28,528) [INFO] -search "quit"
+  (2015-05-15 15:46:28,528) [INFO] -Service permitted
+  (2015-05-15 15:46:28,528) [INFO] -failed search
+
+  (2015-05-15 15:47:54,071) [INFO] -search "quit"
+  (2015-05-15 15:47:54,071) [INFO] -Service permitted
+  (2015-05-15 15:47:54,071) [INFO] -failed search
+
+  (2015-05-15 15:48:42,920) [INFO] -search "quit"
+  (2015-05-15 15:48:42,920) [INFO] -Service permitted
+  (2015-05-15 15:48:42,920) [INFO] -failed search
+
+  (2015-05-15 15:52:10,235) [INFO] -search "123"
+  (2015-05-15 15:52:10,235) [INFO] -Service permitted
+  (2015-05-15 15:52:10,236) [INFO] -failed search
+
+  (2015-05-15 15:52:43,351) [INFO] -Application exits.
+
+  (2015-05-15 15:53:19,705) [INFO] -Application exits.
+
+  

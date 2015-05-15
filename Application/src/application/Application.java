@@ -81,12 +81,12 @@ public class Application {
 			String studentName = scan.nextLine();
 
 			// quit是否退出
-			if (studentName == "q")
+			if (studentName.equals("q"))
 				break;
 			else {
+				System.out.println(Integer.parseInt(studentName));
 				PM.addItem("Message received", 1);
 				logger.info("search \"" + studentName +"\"" );
-				
 
 				// License是否可以提供服务
 				if (!license.inLicense()) {
@@ -123,5 +123,6 @@ public class Application {
 		}
 		scan.close();
 		logger.info("Application exits.\n");
+		PM.stop();
 	}
 }
