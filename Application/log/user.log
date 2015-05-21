@@ -8,4 +8,16 @@
 
   (2015-05-16 18:30:43,468) [INFO] -Application exits.
 
+  (2015-05-21 19:13:11,042) [INFO] -search "Group7"
+  (2015-05-21 19:13:11,043) [INFO] -Service permitted
+  (2015-05-21 19:13:11,043) [INFO] -failed search
+
+  (2015-05-21 19:13:28,553) [INFO] -search "·½³Ì"
+  (2015-05-21 19:13:28,554) [INFO] -Service permitted
+  (2015-05-21 19:13:28,554) [INFO] -Successful search
+
+  (2015-05-21 19:13:36,775) [INFO] -search "Group"
+  (2015-05-21 19:13:36,776) [INFO] -Service permitted
+  (2015-05-21 19:13:36,776) [INFO] -failed search
+
   
