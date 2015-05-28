@@ -99,7 +99,8 @@ public class Application {
 				} else {
 					FailureManager.logInfo("Service permitted");
 					PM.addItem("Service permitted", 1);
-
+					
+					//查询组名
 					if (studentName.contains("Group") == true) {
 						Iterator iterator = cm.keyList();
 						System.out.println();
@@ -107,13 +108,13 @@ public class Application {
 						while (iterator.hasNext()) {
 							String key = (String) iterator.next();
 							String value = cm.SearchKey(key);
-							//System.out.println(key + "+" + value);
 							if (value.equals(studentName)) {
 								groupMember.add(key);
 							} else {
 								continue;
 							}
 						}
+						//组名查找成功
 						if (groupMember.size() != 0) {
 							System.out.println(studentName + " contains:");
 							Iterator member = groupMember.iterator();
@@ -123,16 +124,18 @@ public class Application {
 							PM.addItem("Successful search", 1);
 							PM.addItem("Message responsed", 1);
 							logger.info("Successful search\n");
-						} else {
+						} 
+						//组名查找失败
+						else {
 							System.out.println(studentName + " doesn't exists!");
 							logger.info("failed search\n");
 							PM.addItem("Message responsed", 1);
 						}
 					}
-
+					//查询组员
 					else {
 						String res = cm.SearchKey(studentName);
-						// 查询成功
+						// 查询组员成功
 						if (res != null) {
 							System.out.println(studentName + " is in " + res
 									+ ".");
@@ -141,7 +144,7 @@ public class Application {
 							logger.info("Successful search\n");
 						}
 
-						// 查询失败
+						// 查询组员失败
 						else {
 							System.out.println(studentName
 									+ " is not in the student list.");
