@@ -77,12 +77,14 @@ public class Application {
 		Scanner scan = new Scanner(System.in);
 
 		while (true) {
-			System.out.println("Student or Group name to search('q' to quit):");
+			System.out.println("Student or Group name to search('q' to quit,'c' to change configuration):");
 			String studentName = scan.nextLine();
 
 			// quitÊÇ·ñÍË³ö
 			if (studentName.equals("q"))
 				break;
+			
+			
 			else {
 				PM.addItem("Message received", 1);
 				logger.info("search \"" + studentName + "\"");

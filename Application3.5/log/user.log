@@ -1,0 +1,23 @@
+(2015-05-28 19:32:01,912) [INFO] -更新项不存在
+  (2015-05-28 19:32:52,764) [INFO] -方程更新成功
+  (2015-05-28 19:33:44,188) [INFO] -更新项不存在
+  (2015-05-28 19:34:13,773) [INFO] -更新项不存在
+  (2015-05-28 19:43:03,398) [INFO] -Application exits.
+
+  (2015-05-28 19:43:12,230) [INFO] -Application exits.
+
+  (2015-05-28 19:47:10,088) [INFO] -Application exits.
+
+  (2015-05-28 19:48:01,804) [INFO] -search "方程"
+  (2015-05-28 19:48:01,805) [INFO] -Service permitted
+  (2015-05-28 19:48:01,806) [INFO] -Successful search
+
+  (2015-05-28 19:49:01,037) [INFO] -search "Group7"
+  (2015-05-28 19:49:01,038) [INFO] -Service permitted
+  (2015-05-28 19:49:01,040) [INFO] -Successful search
+
+  (2015-05-28 20:10:27,486) [INFO] -search "fangcheng"
+  (2015-05-28 20:10:27,487) [INFO] -Service permitted
+  (2015-05-28 20:10:27,487) [INFO] -failed search
+
+  
