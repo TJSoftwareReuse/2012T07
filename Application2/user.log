@@ -2,4 +2,24 @@
 
   (2015-05-21 19:33:44,205) [INFO] -Application running...
 
+  (2015-05-29 10:16:27,807) [INFO] -Application running...
+
+  (2015-05-29 13:41:37,322) [INFO] -Application running...
+
+  (2015-05-29 13:42:49,862) [INFO] -Application running...
+
+  (2015-05-29 13:42:51,721) [INFO] -search "c"
+  (2015-05-29 13:42:51,725) [INFO] -Service permitted
+  (2015-05-29 13:42:51,726) [INFO] -failed search
+
+  (2015-05-29 13:43:06,335) [INFO] -search "fdsa"
+  (2015-05-29 13:43:06,335) [INFO] -Service permitted
+  (2015-05-29 13:43:06,336) [INFO] -failed search
+
+  (2015-05-29 13:43:11,402) [INFO] -search "·½³Ì"
+  (2015-05-29 13:43:11,402) [INFO] -Service permitted
+  (2015-05-29 13:43:11,403) [INFO] -Successful search
+
+  (2015-05-29 13:43:14,674) [INFO] -Application exits.
+
   

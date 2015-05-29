@@ -62,22 +62,22 @@ public class Application {
 		}
 
 		// FM
-		String FMoutpath = cm.SearchKey("FMPath");
-		if (FMoutpath != "")
-			FailureManager.resetOutputFile(FMoutpath);
-		else {
-			System.out
-					.println("FM output path is not included in config file.");
-			logger.warn("FM output path is not included in config file.");
-			FailureManager
-					.logError("FM output path is not included in config file.");
-		}
+//		String FMoutpath = cm.SearchKey("FMPath");
+//		if (FMoutpath != "")
+//			FailureManager.resetOutputFile(FMoutpath);
+//		else {
+//			System.out
+//					.println("FM output path is not included in config file.");
+//			logger.warn("FM output path is not included in config file.");
+//			FailureManager
+//					.logError("FM output path is not included in config file.");
+//		}
 
 		// 主查询功能
 		Scanner scan = new Scanner(System.in);
 
 		while (true) {
-			System.out.println("Student or Group name to search('q' to quit,'c' to change configuration):");
+			System.out.println("Student or Group name to search('q' to quit):");
 			String studentName = scan.nextLine();
 
 			// quit是否退出

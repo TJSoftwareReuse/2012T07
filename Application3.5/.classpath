@@ -6,6 +6,6 @@
 	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
 	<classpathentry kind="lib" path="lib/PM.jar"/>
 	<classpathentry kind="lib" path="lib/CM1.3.jar"/>
-	<classpathentry kind="lib" path="lib/FM2.jar"/>
+	<classpathentry kind="lib" path="lib/fm.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
