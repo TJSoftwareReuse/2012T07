@@ -1,13 +1,8 @@
 package application;
-
 import org.apache.log4j.Logger;
-
-<<<<<<< HEAD
 import java.io.IOException;
 import java.util.Scanner;
-
 import com.manager.failure.FailureManager;
-
 import cgfm.CM;
 import pm.PM;
 import src.com.team8.License.License;
@@ -85,7 +80,6 @@ public class Application {
 			if (studentName.equals("q"))
 				break;
 			else {
-				System.out.println(Integer.parseInt(studentName));
 				PM.addItem("Message received", 1);
 				logger.info("search \"" + studentName +"\"" );
 
@@ -126,21 +120,4 @@ public class Application {
 		logger.info("Application exits.\n");
 		PM.stop();
 	}
-=======
-public class Application {
-	public static final Logger logger=Logger.getLogger("stdout");
-	
-	public static void main(String[] args) {
-		String message="this is a message";
-		String url=Application.class.getClassLoader().getResource("").getPath();
-		System.out.println(url);
-		System.setProperty("LOG_DIR", url);
-		logger.debug(message);
-		logger.info(message);
-		logger.warn(message);
-		logger.error(message);
-		logger.fatal(message);
-	}
-
->>>>>>> d308bf1f0794cf353959be44323546137e0518ec
 }

@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-<<<<<<< HEAD
-=======
-	<classpathentry kind="lib" path="F:/git_repository/2012T07/Application/lib/log4j-1.2.16.jar"/>
->>>>>>> d308bf1f0794cf353959be44323546137e0518ec
 	<classpathentry kind="src" path="src"/>
 	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
 	<classpathentry kind="lib" path="lib/CM1.1.jar"/>
 	<classpathentry kind="lib" path="lib/fm.jar"/>
 	<classpathentry kind="lib" path="lib/License.jar"/>
-<<<<<<< HEAD
-	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
-	<classpathentry kind="lib" path="lib/PM.jar"/>
-=======
-	<classpathentry kind="lib" path="lib/PM.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
->>>>>>> d308bf1f0794cf353959be44323546137e0518ec
+	<classpathentry kind="lib" path="C:/Users/Administrator/2012T07/Application/lib/PM.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Administrator/2012T07/Application/lib/log4j-1.2.16.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

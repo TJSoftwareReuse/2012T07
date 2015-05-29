@@ -34,4 +34,14 @@
 
   (2015-05-15 15:53:19,705) [INFO] -Application exits.
 
+  (2015-05-16 16:45:25,233) [INFO] -search "quit"
+  (2015-05-16 16:45:25,248) [INFO] -Service permitted
+  (2015-05-16 16:45:25,248) [INFO] -failed search
+
+  (2015-05-16 16:45:36,092) [INFO] -search "·½³Ì"
+  (2015-05-16 16:45:36,092) [INFO] -Service permitted
+  (2015-05-16 16:45:36,092) [INFO] -Successful search
+
+  (2015-05-16 16:45:37,622) [INFO] -Application exits.
+
   
