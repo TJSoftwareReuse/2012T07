@@ -1,100 +1,98 @@
 package pm;
+
 import java.io.File;
 import java.io.FileWriter;
+import java.lang.reflect.Field;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.Date;
+import java.util.LinkedHashMap;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class PM {
+public class PM extends TimerTask {
 
-	private static Map<String, Integer> map = new HashMap<String, Integer>();
+	private static LinkedHashMap<String, Integer> map = new LinkedHashMap<String, Integer>();
 	public static String path;
-	private static Thread th;
-	private static myThread mt = new myThread(map);
+	Timer timer = null;
+	private static long interval = 60000;
 
 	// 添加性能指标
-	public static void addItem(String _name, int _num) {
+	public void addItem(String _name, int _num) {
 		// 是否已经启动性能统计
-		if (th != null) {
+		if (timer != null) {
 			if (!map.containsKey(_name))
 				map.put(_name, _num);
 			else
 				map.put(_name, map.get(_name) + _num);
 		}
 	}
+
 	// 启动性能统计
-	public static void start() {
-		th = new Thread(mt);
-		th.start();
-	}
-	// 关闭性能统计
-	public static void stop() {
-		mt.stop();
-		th = null;
+	public void start() {
+		timer = new Timer();
+		timer.scheduleAtFixedRate(this, interval, interval);
 	}
 
-	public static void setPath(String _path){
+	// 关闭性能统计
+	public void stop() {
+		timer.cancel();
+		timer = null;
+	}
+
+	public void setPath(String _path) {
 		path = _path;
 	}
-	
-	static class myThread implements Runnable {
-		private static Map<String, Integer> map = new HashMap<String, Integer>();
-		Timer t = new Timer();
 
-		public myThread(Map<String, Integer> _map) {
-			myThread.map = _map;
+	public void resetInterval(long _interval) {
+		interval = _interval;
+		setDeclaredField(TimerTask.class, this, "period", interval);
+	}
+
+		boolean setDeclaredField(Class<?> clazz, Object obj, String name,
+				Object value) {
+			try {
+				Field field = clazz.getDeclaredField(name);
+				field.setAccessible(true);
+				field.set(obj, value);
+				return true;
+			} catch (Exception ex) {
+				ex.printStackTrace();
+				return false;
+			}
 		}
+	@Override
+	public void run() {
+		try {
+			Calendar cal = Calendar.getInstance();
+			//开始时间
+			Date date = cal.getTime();
+			SimpleDateFormat sdFormat = new SimpleDateFormat(
+					"HH时-mm分-ss秒");
+			String myTime = sdFormat.format(date);
+			//结束时间
+			long end = System.currentTimeMillis() + interval;
+			java.util.Date endDate = new Date(end);
+			String endTime = sdFormat.format(endDate);
+			
+			String fileName = path + "/pm" + myTime + "—" + endTime + ".txt";
+			File file = new File(fileName);
+			file.createNewFile();
 
-		public void run() {
+			FileWriter fw = new FileWriter(file);
+			for (String keyWriter : map.keySet()) {
+				fw.write(keyWriter + ":");
+				fw.write(map.get(keyWriter).toString());
+				fw.write('\n');
+				fw.flush();
+			}
+			fw.close();
+			map.clear();
+		} catch (Exception e) {
 
-			t.scheduleAtFixedRate(new TimerTask() {
-				@Override
-				public void run() {
-					try {
-						Calendar cal = Calendar.getInstance();
-						java.util.Date date = cal.getTime();
-						SimpleDateFormat sdFormat = new SimpleDateFormat(
-								"yyyy-MM-dd-hh-mm-ss");
-						String myTime = sdFormat.format(date);
-
-						String fileName = path +"/pm"+ myTime + ".txt";
-						File file = new File(fileName);
-						file.createNewFile();
-
-						FileWriter fw = new FileWriter(file);
-						for (String keyWriter : map.keySet()) {
-							fw.write(keyWriter + ":");
-							fw.write(map.get(keyWriter).toString());
-							fw.write('\n');
-							fw.flush();
-						}
-						fw.close();
-						map.clear();
-					} catch (Exception e) {
-						
-					}
-				}
-			}, 60000, 60000);
-		}
-
-		public void stop() {
-			t.cancel();
 		}
 	}
-	
+		
 
-	// public static void main(String[] args) {
-	// 	PM.start();
-	// 	PM.setPath("D:/pm");
-	// 	PM.addItem("power", 100);
-	// 	PM.addItem("power", 100);
-	// 	PM.addItem("power", 500);
-	// 	PM.addItem("product", 50);
-	// 	PM.addItem("product", 100);
-
-	}
 
 }

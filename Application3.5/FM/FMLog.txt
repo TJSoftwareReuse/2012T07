@@ -1,0 +1,46 @@
+2015-06-152 17:18:20 INFO search "方程"
+2015-06-152 17:18:20 INFO Service permitted
+2015-06-152 17:18:20 INFO Successful search
+
+2015-06-152 17:18:27 INFO search "黄昕"
+2015-06-152 17:18:27 INFO Successful search
+
+2015-06-152 17:18:31 INFO Application exits.
+
+2015-06-152 17:19:03 INFO search "黄昕"
+2015-06-152 17:19:03 INFO Service permitted
+2015-06-152 17:19:03 INFO Successful search
+
+2015-06-152 17:19:09 INFO search "关晨"
+2015-06-152 17:19:09 INFO Successful search
+
+2015-06-152 17:19:21 INFO search "Group"
+2015-06-152 17:19:21 INFO failed search
+
+2015-06-152 17:19:31 INFO search "Group2"
+2015-06-152 17:19:31 INFO Successful search
+
+2015-06-152 17:22:35 INFO search "黄昕"
+2015-06-152 17:22:35 INFO Service permitted
+2015-06-152 17:22:35 INFO Successful search
+
+2015-06-152 17:22:42 INFO search "Group1"
+2015-06-152 17:22:42 INFO Successful search
+
+2015-06-152 17:23:44 INFO PMPath更新成功
+2015-06-152 17:24:21 INFO search "ccc"
+2015-06-152 17:24:21 INFO Service permitted
+2015-06-152 17:24:21 INFO failed search
+
+2015-06-152 17:24:26 INFO search "g"
+2015-06-152 17:24:26 INFO failed search
+
+2015-06-152 17:24:38 INFO PMInterval更新成功
+2015-06-152 17:29:31 INFO search "黄昕"
+2015-06-152 17:29:31 INFO Service permitted
+2015-06-152 17:29:31 INFO Successful search
+
+2015-06-152 17:39:09 INFO search "黄昕"
+2015-06-152 17:39:09 INFO Service permitted
+2015-06-152 17:39:09 INFO Successful search
+
