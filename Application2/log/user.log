@@ -1,0 +1,25 @@
+(2015-05-21 19:31:55,059) [INFO] -search "Group7"
+  (2015-05-21 19:31:55,060) [INFO] -Service permitted
+  (2015-05-21 19:31:55,062) [INFO] -Successful search
+
+  (2015-05-21 19:32:03,487) [INFO] -search "·½³Ì"
+  (2015-05-21 19:32:03,487) [INFO] -Service permitted
+  (2015-05-21 19:32:03,488) [INFO] -Successful search
+
+  (2015-05-21 19:32:07,360) [INFO] -search "·É"
+  (2015-05-21 19:32:07,361) [INFO] -Service permitted
+  (2015-05-21 19:32:07,361) [INFO] -failed search
+
+  (2015-05-21 19:32:13,638) [INFO] -search "Group1"
+  (2015-05-21 19:32:13,639) [INFO] -Service permitted
+  (2015-05-21 19:32:13,640) [INFO] -Successful search
+
+  (2015-05-21 19:32:20,724) [INFO] -search "Group100"
+  (2015-05-21 19:32:20,724) [INFO] -Service permitted
+  (2015-05-21 19:32:20,725) [INFO] -failed search
+
+  (2015-05-21 19:33:49,984) [INFO] -search "Group7"
+  (2015-05-21 19:33:49,984) [INFO] -Service permitted
+  (2015-05-21 19:33:49,986) [INFO] -Successful search
+
+  
