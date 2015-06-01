@@ -1,3 +1,0 @@
-FMPath ./FM/FMLog.txt
-PMPath ./PM/
-License 10
