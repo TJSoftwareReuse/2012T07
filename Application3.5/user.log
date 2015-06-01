@@ -1,0 +1,34 @@
+(2015-06-01 21:12:48,545) [DEBUG] -Initializing...
+  (2015-06-01 21:12:48,548) [INFO] -Log directory set!
+  (2015-06-01 21:12:48,550) [INFO] -Log directory path: F:\git_repository\2012T07\Application3.5\log
+  (2015-06-01 21:12:48,588) [DEBUG] -Creating log file...
+  (2015-06-01 21:12:48,590) [INFO] -New log file created!
+  (2015-06-01 21:12:48,591) [INFO] -Log file path: F:\git_repository\2012T07\Application3.5\log\2015-06-01_1.log
+  (2015-06-01 21:12:48,591) [DEBUG] -Create operation completed!
+  (2015-06-01 21:12:48,592) [DEBUG] -Initialization completed!
+  (2015-06-01 21:12:48,592) [INFO] -Application running...
+
+  (2015-06-01 21:12:48,606) [INFO] -Log directory set!
+  (2015-06-01 21:12:48,606) [INFO] -Log directory path: F:\git_repository\2012T07\Application3.5\FM
+  (2015-06-01 21:12:48,607) [DEBUG] -Creating log file...
+  (2015-06-01 21:12:48,608) [INFO] -New log file created!
+  (2015-06-01 21:12:48,609) [INFO] -Log file path: F:\git_repository\2012T07\Application3.5\FM\2015-06-01_1.log
+  (2015-06-01 21:12:48,609) [DEBUG] -Create operation completed!
+  (2015-06-01 21:12:52,749) [INFO] -search "方程"
+  (2015-06-01 21:12:52,750) [DEBUG] -Writing message to file...
+  (2015-06-01 21:12:52,752) [DEBUG] -Write operation completed!
+  (2015-06-01 21:12:52,752) [INFO] -Successful search
+
+  (2015-06-01 21:12:55,666) [INFO] -search "fas"
+  (2015-06-01 21:12:55,666) [INFO] -failed search
+
+  (2015-06-01 21:13:00,547) [INFO] -search "Group7"
+  (2015-06-01 21:13:00,549) [INFO] -Successful search
+
+  (2015-06-01 21:13:07,219) [INFO] -search "g"
+  (2015-06-01 21:13:07,219) [INFO] -failed search
+
+  (2015-06-01 21:13:14,807) [INFO] -更新项不存在
+  (2015-06-01 21:13:25,151) [INFO] -Application exits.
+
+  
