@@ -7,7 +7,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-import com.manager.failure.FailureManager;
+//import com.manager.failure.FailureManager;
+import edu.tongji.FaultManagement;
 import cgfm.CM;
 import pm.PM;
 import src.com.team8.License.License;
@@ -25,13 +26,16 @@ public class Application {
 
 	public static int fmInfo = 0;
 
+	
+	
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) throws IOException {
 		String oldurl = Application.class.getClassLoader().getResource("")
 				.getPath();
-		String url = oldurl.replace("bin/", "log/");
+		String url = oldurl.replace("bin/", "/");
 		System.setProperty("LOG_DIR", url);
-
+		FaultManagement fm = FaultManagement.getInstance();
+		
 		// CM读取配置信息
 		System.out.println("Application running...");
 		logger.info("Application running...\n");
@@ -56,8 +60,7 @@ public class Application {
 			logger.warn("PM output path is not included in config file.");
 			if (pmPathConfig != fmInfo) {
 				fmInfo = pmPathConfig;
-				FailureManager
-						.logError("PM output path is not included in config file.");
+				fm.generateWarningMessage("PM output path is not included in config file.");
 			}
 		}
 
@@ -71,23 +74,21 @@ public class Application {
 			logger.warn("License is not included in config file.");
 			if (licenseConfig != fmInfo) {
 				fmInfo = licenseConfig;
-				FailureManager
-						.logError("License is not included in config file.");
+				fm.generateWarningMessage("License is not included in config file.");
 			}
 		}
 
 		// FM
 		String FMoutpath = cm.SearchKey("FMPath");
 		if (FMoutpath != "")
-			FailureManager.resetOutputFile(FMoutpath);
+			fm.setLogDirPath(FMoutpath);
 		else {
 			System.out
 					.println("FM output path is not included in config file.");
 			logger.warn("FM output path is not included in config file.");
 			if (fmPathConfig != fmInfo) {
 				fmInfo = fmPathConfig;
-				FailureManager
-						.logError("FM output path is not included in config file.");
+				fm.generateWarningMessage("FM output path is not included in config file.");
 			}
 		}
 
@@ -124,22 +125,22 @@ public class Application {
 					// TODO: handle exception
 				}
 				// 更改配置
-				if (key.equals("FMPath")) {
+				if (key.equals("FMPath")&&value!=null) {
 					cm.changeItem(key, value);
-					FailureManager.resetOutputFile(cm.SearchKey("FMPath"));
+					fm.setLogDirPath(cm.SearchKey("FMPath"));
 					System.out.println(key + "更新成功");
 					logger.info(key + "更新成功");
-				} else if (key.equals("PMPath")) {
+				} else if (key.equals("PMPath")&&value!=null) {
 					cm.changeItem(key, value);
 					pm.setPath(cm.SearchKey("PMPath"));
 					System.out.println(key + "更新成功");
 					logger.info(key + "更新成功");
-				} else if (key.equals("License")) {
+				} else if (key.equals("License")&&value!=null) {
 					cm.changeItem(key, value);
 					license = new License(Integer.parseInt(value));
 					System.out.println(key + "更新成功");
 					logger.info(key + "更新成功");
-				} else if (key.equals("PMInterval")) {
+				} else if (key.equals("PMInterval")&&value!=null) {
 					pm.resetInterval(Long.parseLong(value));					
 					System.out.println(key + "更新成功");
 					logger.info(key + "更新成功");
@@ -167,13 +168,13 @@ public class Application {
 					logger.info("Search service unabled.");
 					if (serviceDenied != fmInfo) {
 						fmInfo = serviceDenied;
-						FailureManager.logWarn("Service denied");
+						fm.generateWarningMessage("Service denied");
 					}					pm.addItem("Service denied", 1);
 					pm.addItem("Message responsed", 1);
 				} else {
 					if (servicePermitted != fmInfo) {
 						fmInfo = servicePermitted;
-						FailureManager.logInfo("Service permitted");
+						fm.generateWarningMessage("Service permitted");
 					}
 					pm.addItem("Service permitted", 1);
 
@@ -226,14 +227,14 @@ public class Application {
 					logger.info("Search service unabled.");
 					if (serviceDenied != fmInfo) {
 						fmInfo = serviceDenied;
-						FailureManager.logWarn("Service denied");
+						fm.generateWarningMessage("Service denied");
 					}
 					pm.addItem("Service denied", 1);
 					pm.addItem("Message responsed", 1);
 				} else {
 					if (servicePermitted != fmInfo) {
 						fmInfo = servicePermitted;
-						FailureManager.logInfo("Service permitted");
+						fm.generateWarningMessage("Service permitted");
 					}
 					pm.addItem("Service permitted", 1);
 

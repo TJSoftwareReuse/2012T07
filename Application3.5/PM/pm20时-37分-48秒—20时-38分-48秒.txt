@@ -1,5 +1,0 @@
-Message received:1
-Service permitted:1
-Failed search
-:1
-Message responsed:1
