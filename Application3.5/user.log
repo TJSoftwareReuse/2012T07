@@ -31,4 +31,220 @@
   (2015-06-01 21:13:14,807) [INFO] -∏¸–¬œÓ≤ª¥Ê‘⁄
   (2015-06-01 21:13:25,151) [INFO] -Application exits.
 
+  (2015-06-03 23:58:28,849) [DEBUG] -Initializing...
+  (2015-06-03 23:58:28,852) [INFO] -Log directory set!
+  (2015-06-03 23:58:28,852) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-03 23:58:28,884) [DEBUG] -Creating log file...
+  (2015-06-03 23:58:28,884) [INFO] -New log file created!
+  (2015-06-03 23:58:28,884) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-03_1.log
+  (2015-06-03 23:58:28,884) [DEBUG] -Create operation completed!
+  (2015-06-03 23:58:28,884) [DEBUG] -Initialization completed!
+  (2015-06-03 23:58:28,884) [INFO] -Application running...
+
+  (2015-06-03 23:58:28,915) [INFO] -Log directory set!
+  (2015-06-03 23:58:28,915) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM
+  (2015-06-03 23:58:28,915) [DEBUG] -Creating log file...
+  (2015-06-03 23:58:28,916) [INFO] -New log file created!
+  (2015-06-03 23:58:28,916) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM/2015-06-03_1.log
+  (2015-06-03 23:58:28,916) [DEBUG] -Create operation completed!
+  (2015-06-04 11:06:23,344) [DEBUG] -Initializing...
+  (2015-06-04 11:06:23,345) [INFO] -Log directory set!
+  (2015-06-04 11:06:23,345) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 11:06:23,372) [DEBUG] -Creating log file...
+  (2015-06-04 11:06:23,373) [INFO] -New log file created!
+  (2015-06-04 11:06:23,373) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 11:06:23,373) [DEBUG] -Create operation completed!
+  (2015-06-04 11:06:23,373) [DEBUG] -Initialization completed!
+  (2015-06-04 11:06:23,374) [INFO] -Application running...
+
+  (2015-06-04 11:06:23,382) [INFO] -Log directory set!
+  (2015-06-04 11:06:23,382) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM
+  (2015-06-04 11:06:23,382) [DEBUG] -Creating log file...
+  (2015-06-04 11:06:23,383) [INFO] -New log file created!
+  (2015-06-04 11:06:23,383) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM/2015-06-04_1.log
+  (2015-06-04 11:06:23,383) [DEBUG] -Create operation completed!
+  (2015-06-04 11:07:20,233) [INFO] -search "Èπè"
+  (2015-06-04 11:07:20,234) [DEBUG] -Writing message to file...
+  (2015-06-04 11:07:20,234) [DEBUG] -Write operation completed!
+  (2015-06-04 11:07:20,234) [INFO] -failed search
+
+  (2015-06-04 11:07:29,954) [INFO] -search "ËµµÈπè"
+  (2015-06-04 11:07:29,954) [INFO] -Successful search
+
+  (2015-06-04 11:34:56,831) [DEBUG] -Initializing...
+  (2015-06-04 11:34:56,832) [INFO] -Log directory set!
+  (2015-06-04 11:34:56,832) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 11:34:56,836) [DEBUG] -Creating log file...
+  (2015-06-04 11:34:56,837) [INFO] -New log file created!
+  (2015-06-04 11:34:56,837) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 11:34:56,837) [DEBUG] -Create operation completed!
+  (2015-06-04 11:34:56,837) [DEBUG] -Initialization completed!
+  (2015-06-04 11:50:18,070) [DEBUG] -Initializing...
+  (2015-06-04 11:50:18,071) [INFO] -Log directory set!
+  (2015-06-04 11:50:18,071) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 11:50:18,074) [DEBUG] -Creating log file...
+  (2015-06-04 11:50:18,074) [INFO] -New log file created!
+  (2015-06-04 11:50:18,074) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 11:50:18,074) [DEBUG] -Create operation completed!
+  (2015-06-04 11:50:18,075) [DEBUG] -Initialization completed!
+  (2015-06-04 13:05:53,021) [DEBUG] -Initializing...
+  (2015-06-04 13:05:53,022) [INFO] -Log directory set!
+  (2015-06-04 13:05:53,022) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 13:05:53,025) [DEBUG] -Creating log file...
+  (2015-06-04 13:05:53,025) [INFO] -New log file created!
+  (2015-06-04 13:05:53,026) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 13:05:53,026) [DEBUG] -Create operation completed!
+  (2015-06-04 13:05:53,026) [DEBUG] -Initialization completed!
+  (2015-06-04 13:10:28,833) [DEBUG] -Initializing...
+  (2015-06-04 13:10:28,834) [INFO] -Log directory set!
+  (2015-06-04 13:10:28,834) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 13:10:28,838) [DEBUG] -Creating log file...
+  (2015-06-04 13:10:28,838) [INFO] -New log file created!
+  (2015-06-04 13:10:28,839) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 13:10:28,839) [DEBUG] -Create operation completed!
+  (2015-06-04 13:10:28,839) [DEBUG] -Initialization completed!
+  (2015-06-04 13:11:54,532) [DEBUG] -Initializing...
+  (2015-06-04 13:11:54,533) [INFO] -Log directory set!
+  (2015-06-04 13:11:54,534) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 13:11:54,537) [DEBUG] -Creating log file...
+  (2015-06-04 13:11:54,537) [INFO] -New log file created!
+  (2015-06-04 13:11:54,537) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 13:11:54,537) [DEBUG] -Create operation completed!
+  (2015-06-04 13:11:54,537) [DEBUG] -Initialization completed!
+  (2015-06-04 13:11:54,537) [INFO] -Log directory set!
+  (2015-06-04 13:11:54,538) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM
+  (2015-06-04 13:11:54,538) [DEBUG] -Creating log file...
+  (2015-06-04 13:11:54,538) [INFO] -New log file created!
+  (2015-06-04 13:11:54,538) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM/2015-06-04_1.log
+  (2015-06-04 13:11:54,538) [DEBUG] -Create operation completed!
+  (2015-06-04 13:19:46,287) [DEBUG] -Initializing...
+  (2015-06-04 13:19:46,288) [INFO] -Log directory set!
+  (2015-06-04 13:19:46,288) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 13:19:46,291) [DEBUG] -Creating log file...
+  (2015-06-04 13:19:46,291) [INFO] -New log file created!
+  (2015-06-04 13:19:46,291) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 13:19:46,291) [DEBUG] -Create operation completed!
+  (2015-06-04 13:19:46,291) [DEBUG] -Initialization completed!
+  (2015-06-04 13:19:46,292) [INFO] -Application running...
+
+  (2015-06-04 13:19:46,296) [INFO] -Log directory set!
+  (2015-06-04 13:19:46,296) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM
+  (2015-06-04 13:19:46,297) [DEBUG] -Creating log file...
+  (2015-06-04 13:19:46,297) [INFO] -New log file created!
+  (2015-06-04 13:19:46,297) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM/2015-06-04_1.log
+  (2015-06-04 13:19:46,297) [DEBUG] -Create operation completed!
+  (2015-06-04 13:19:46,297) [INFO] -failed search
+
+  (2015-06-04 13:19:46,297) [INFO] -failed search
+
+  (2015-06-04 13:19:46,301) [INFO] -failed search
+
+  (2015-06-04 13:19:46,301) [INFO] -failed search
+
+  (2015-06-04 13:20:00,782) [DEBUG] -Initializing...
+  (2015-06-04 13:20:00,782) [INFO] -Log directory set!
+  (2015-06-04 13:20:00,783) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 13:20:00,816) [DEBUG] -Creating log file...
+  (2015-06-04 13:20:00,816) [INFO] -New log file created!
+  (2015-06-04 13:20:00,816) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 13:20:00,816) [DEBUG] -Create operation completed!
+  (2015-06-04 13:20:00,816) [DEBUG] -Initialization completed!
+  (2015-06-04 13:20:00,817) [INFO] -Application running...
+
+  (2015-06-04 13:20:00,898) [INFO] -Log directory set!
+  (2015-06-04 13:20:00,901) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM
+  (2015-06-04 13:20:00,901) [DEBUG] -Creating log file...
+  (2015-06-04 13:20:00,901) [INFO] -New log file created!
+  (2015-06-04 13:20:00,901) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM/2015-06-04_1.log
+  (2015-06-04 13:20:00,902) [DEBUG] -Create operation completed!
+  (2015-06-04 13:20:12,297) [INFO] -search "group4"
+  (2015-06-04 13:20:12,297) [DEBUG] -Writing message to file...
+  (2015-06-04 13:20:12,299) [DEBUG] -Write operation completed!
+  (2015-06-04 13:20:12,299) [INFO] -failed search
+
+  (2015-06-04 13:20:21,938) [INFO] -search "group 4"
+  (2015-06-04 13:20:21,938) [INFO] -failed search
+
+  (2015-06-04 13:21:21,445) [DEBUG] -Initializing...
+  (2015-06-04 13:21:21,446) [INFO] -Log directory set!
+  (2015-06-04 13:21:21,446) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 13:21:21,450) [DEBUG] -Creating log file...
+  (2015-06-04 13:21:21,450) [INFO] -New log file created!
+  (2015-06-04 13:21:21,450) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 13:21:21,450) [DEBUG] -Create operation completed!
+  (2015-06-04 13:21:21,451) [DEBUG] -Initialization completed!
+  (2015-06-04 13:21:21,451) [INFO] -Application running...
+
+  (2015-06-04 13:21:21,455) [INFO] -Log directory set!
+  (2015-06-04 13:21:21,455) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM
+  (2015-06-04 13:21:21,455) [DEBUG] -Creating log file...
+  (2015-06-04 13:21:21,455) [INFO] -New log file created!
+  (2015-06-04 13:21:21,455) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM/2015-06-04_1.log
+  (2015-06-04 13:21:21,455) [DEBUG] -Create operation completed!
+  (2015-06-04 13:21:21,456) [INFO] -Successful search
+
+  (2015-06-04 13:21:21,456) [INFO] -Successful search
+
+  (2015-06-04 13:21:21,456) [INFO] -failed search
+
+  (2015-06-04 13:21:21,456) [INFO] -failed search
+
+  (2015-06-04 13:25:01,312) [DEBUG] -Initializing...
+  (2015-06-04 13:25:01,313) [INFO] -Log directory set!
+  (2015-06-04 13:25:01,313) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 13:25:01,315) [DEBUG] -Creating log file...
+  (2015-06-04 13:25:01,316) [INFO] -New log file created!
+  (2015-06-04 13:25:01,316) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 13:25:01,316) [DEBUG] -Create operation completed!
+  (2015-06-04 13:25:01,316) [DEBUG] -Initialization completed!
+  (2015-06-04 13:25:01,316) [INFO] -Application running...
+
+  (2015-06-04 13:25:01,320) [INFO] -Log directory set!
+  (2015-06-04 13:25:01,320) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM
+  (2015-06-04 13:25:01,320) [DEBUG] -Creating log file...
+  (2015-06-04 13:25:01,320) [INFO] -New log file created!
+  (2015-06-04 13:25:01,320) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM/2015-06-04_1.log
+  (2015-06-04 13:25:01,320) [DEBUG] -Create operation completed!
+  (2015-06-04 13:25:01,321) [INFO] -Successful search
+
+  (2015-06-04 13:25:01,321) [INFO] -Successful search
+
+  (2015-06-04 13:25:01,322) [INFO] -failed search
+
+  (2015-06-04 13:25:01,322) [INFO] -failed search
+
+  (2015-06-04 13:25:01,322) [INFO] -Successful search
+
+  (2015-06-04 13:25:01,322) [INFO] -Successful search
+
+  (2015-06-04 13:25:21,245) [DEBUG] -Initializing...
+  (2015-06-04 13:25:21,247) [INFO] -Log directory set!
+  (2015-06-04 13:25:21,247) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/log
+  (2015-06-04 13:25:21,251) [DEBUG] -Creating log file...
+  (2015-06-04 13:25:21,252) [INFO] -New log file created!
+  (2015-06-04 13:25:21,252) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/log/2015-06-04_1.log
+  (2015-06-04 13:25:21,252) [DEBUG] -Create operation completed!
+  (2015-06-04 13:25:21,252) [DEBUG] -Initialization completed!
+  (2015-06-04 13:25:21,252) [INFO] -Application running...
+
+  (2015-06-04 13:25:21,262) [INFO] -Log directory set!
+  (2015-06-04 13:25:21,263) [INFO] -Log directory path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM
+  (2015-06-04 13:25:21,263) [DEBUG] -Creating log file...
+  (2015-06-04 13:25:21,263) [INFO] -New log file created!
+  (2015-06-04 13:25:21,263) [INFO] -Log file path: /Users/zhaopeng/mygit/2012T07/Application3.5/FM/2015-06-04_1.log
+  (2015-06-04 13:25:21,265) [DEBUG] -Create operation completed!
+  (2015-06-04 13:25:21,265) [INFO] -Successful search
+
+  (2015-06-04 13:25:21,266) [INFO] -Successful search
+
+  (2015-06-04 13:25:21,266) [INFO] -failed search
+
+  (2015-06-04 13:25:21,266) [INFO] -failed search
+
+  (2015-06-04 13:25:21,266) [INFO] -Successful search
+
+  (2015-06-04 13:25:21,266) [INFO] -Successful search
+
+  (2015-06-04 13:25:21,266) [INFO] -failed search
+
   
