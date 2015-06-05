@@ -1,0 +1,6 @@
+Message received:3
+Service permitted:3
+Failed search
+:2
+Message responsed:3
+Successful search:1
