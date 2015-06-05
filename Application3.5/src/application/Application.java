@@ -1,6 +1,11 @@
 package application;
 
+import cgfm.CM;
+import edu.tongji.FaultManagement;
 import org.apache.log4j.Logger;
+import pm.PM;
+import src.com.team8.License.License;
+
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -8,16 +13,12 @@ import java.util.List;
 import java.util.Scanner;
 
 //import com.manager.failure.FailureManager;
-import edu.tongji.FaultManagement;
-import cgfm.CM;
-import pm.PM;
-import src.com.team8.License.License;
 
-//FMµÚ¶ş×é£¬LicenseµÚ°Ë×é
+//FMç¬¬äºŒç»„ï¼ŒLicenseç¬¬å…«ç»„
 public class Application {
 	public static final Logger logger = Logger.getLogger("stdout");
 	public static final PM pm = new PM();
-	// ¶¨Òå¸æ¾¯³£Á¿
+	// å®šä¹‰å‘Šè­¦å¸¸é‡
 	public static final int pmPathConfig = 1;
 	public static final int licenseConfig = 2;
 	public static final int fmPathConfig = 3;
@@ -26,8 +27,8 @@ public class Application {
 
 	public static int fmInfo = 0;
 
-	
-	
+
+
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) throws IOException {
 		String oldurl = Application.class.getClassLoader().getResource("")
@@ -35,21 +36,21 @@ public class Application {
 		String url = oldurl.replace("bin/", "/");
 		System.setProperty("LOG_DIR", url);
 		FaultManagement fm = FaultManagement.getInstance();
-		
-		// CM¶ÁÈ¡ÅäÖÃĞÅÏ¢
+
+		// CMè¯»å–é…ç½®ä¿¡æ¯
 		System.out.println("Application running...");
 		logger.info("Application running...\n");
 		System.out.println("Reading configuration...");
 
 		CM cm = new CM();
-		// ÅäÖÃÎÄ¼şĞè±£´æÔÚÏîÄ¿µÄ¸ùÄ¿Â¼ÏÂ
+		// é…ç½®æ–‡ä»¶éœ€ä¿å­˜åœ¨é¡¹ç›®çš„æ ¹ç›®å½•ä¸‹
 		cm.ProcessFile("./config.txt");
 
-		// CM¶ÁÈ¡Ñ§Éú·Ö×é
+		// CMè¯»å–å­¦ç”Ÿåˆ†ç»„
 		System.out.println("Reading student_group_file...");
 		cm.ProcessFile("./studentlist.txt");
 
-		// PM¿ªÆôĞÔÄÜÍ³¼Æ
+		// PMå¼€å¯æ€§èƒ½ç»Ÿè®¡
 		pm.start();
 		String outpath = cm.SearchKey("PMPath");
 		if (outpath != null)
@@ -92,7 +93,7 @@ public class Application {
 			}
 		}
 
-		// Ö÷²éÑ¯¹¦ÄÜ
+		// ä¸»æŸ¥è¯¢åŠŸèƒ½
 		Scanner scan = new Scanner(System.in);
 
 		while (true) {
@@ -102,11 +103,11 @@ public class Application {
 					.println("'q' to quit,'c' to change configuration,'s' to search student,'g' to search group");
 			String order = scan.nextLine();
 
-			// quitÊÇ·ñÍË³ö
+			// quitæ˜¯å¦é€€å‡º
 			if (order.equals("q"))
 				break;
 
-			// ¸ü¸ÄÅäÖÃ
+				// æ›´æ”¹é…ç½®
 			else if (order.equals("c")) {
 				System.out.println("Here are all the configuration you can change:");
 				System.out.println("PMInterval");
@@ -124,44 +125,44 @@ public class Application {
 				} catch (Exception e) {
 					// TODO: handle exception
 				}
-				// ¸ü¸ÄÅäÖÃ
+				// æ›´æ”¹é…ç½®
 				if (key.equals("FMPath")&&value!=null) {
 					cm.changeItem(key, value);
 					fm.setLogDirPath(cm.SearchKey("FMPath"));
-					System.out.println(key + "¸üĞÂ³É¹¦");
-					logger.info(key + "¸üĞÂ³É¹¦");
+					System.out.println(key + "æ›´æ–°æˆåŠŸ");
+					logger.info(key + "æ›´æ–°æˆåŠŸ");
 				} else if (key.equals("PMPath")&&value!=null) {
 					cm.changeItem(key, value);
 					pm.setPath(cm.SearchKey("PMPath"));
-					System.out.println(key + "¸üĞÂ³É¹¦");
-					logger.info(key + "¸üĞÂ³É¹¦");
+					System.out.println(key + "æ›´æ–°æˆåŠŸ");
+					logger.info(key + "æ›´æ–°æˆåŠŸ");
 				} else if (key.equals("License")&&value!=null) {
 					cm.changeItem(key, value);
 					license = new License(Integer.parseInt(value));
-					System.out.println(key + "¸üĞÂ³É¹¦");
-					logger.info(key + "¸üĞÂ³É¹¦");
+					System.out.println(key + "æ›´æ–°æˆåŠŸ");
+					logger.info(key + "æ›´æ–°æˆåŠŸ");
 				} else if (key.equals("PMInterval")&&value!=null) {
-					pm.resetInterval(Long.parseLong(value));					
-					System.out.println(key + "¸üĞÂ³É¹¦");
-					logger.info(key + "¸üĞÂ³É¹¦");
+					pm.resetInterval(Long.parseLong(value));
+					System.out.println(key + "æ›´æ–°æˆåŠŸ");
+					logger.info(key + "æ›´æ–°æˆåŠŸ");
 				} else {
 					try {
-						System.out.println("¸üĞÂÏî²»´æÔÚ");
-						logger.info("¸üĞÂÏî²»´æÔÚ");
+						System.out.println("æ›´æ–°é¡¹ä¸å­˜åœ¨");
+						logger.info("æ›´æ–°é¡¹ä¸å­˜åœ¨");
 					} catch (Exception e) {
 						// TODO: handle exception
 					}
 				}
 			}
 
-			// ²éÑ¯×éÃû
+			// æŸ¥è¯¢ç»„å
 			else if (order.equals("g")) {
 				System.out.println("Please input the group name");
 				String groupName = scan.nextLine();
 				pm.addItem("Message received", 1);
 				logger.info("search \"" + groupName + "\"");
 
-				// LicenseÊÇ·ñ¿ÉÒÔÌá¹©·şÎñ
+				// Licenseæ˜¯å¦å¯ä»¥æä¾›æœåŠ¡
 				if (!license.inLicense()) {
 
 					System.out.println("Search service unabled.");
@@ -178,7 +179,7 @@ public class Application {
 					}
 					pm.addItem("Service permitted", 1);
 
-					// ²éÑ¯×éÃû
+					// æŸ¥è¯¢ç»„å
 					Iterator iterator = cm.keyList();
 					System.out.println();
 					List<String> groupMember = new ArrayList<String>();
@@ -191,7 +192,7 @@ public class Application {
 							continue;
 						}
 					}
-					// ×éÃû²éÕÒ³É¹¦
+					// ç»„åæŸ¥æ‰¾æˆåŠŸ
 					if (groupMember.size() != 0) {
 						System.out.println(groupName + " contains:");
 						Iterator member = groupMember.iterator();
@@ -202,7 +203,7 @@ public class Application {
 						pm.addItem("Message responsed", 1);
 						logger.info("Successful search\n");
 					}
-					// ×éÃû²éÕÒÊ§°Ü
+					// ç»„åæŸ¥æ‰¾å¤±è´¥
 					else {
 						System.out.println(groupName + " doesn't exists!");
 						logger.info("failed search\n");
@@ -212,7 +213,7 @@ public class Application {
 				}
 			}
 
-			// ²éÑ¯×éÔ±
+			// æŸ¥è¯¢ç»„å‘˜
 			else if (order.equals("s")) {
 				System.out.println("Please input the student name");
 				String studentName = scan.nextLine();
@@ -220,7 +221,7 @@ public class Application {
 				logger.info("search \"" + studentName + "\"");
 				String res = cm.SearchKey(studentName);
 
-				// LicenseÊÇ·ñ¿ÉÒÔÌá¹©·şÎñ
+				// Licenseæ˜¯å¦å¯ä»¥æä¾›æœåŠ¡
 				if (!license.inLicense()) {
 
 					System.out.println("Search service unabled.");
@@ -238,7 +239,7 @@ public class Application {
 					}
 					pm.addItem("Service permitted", 1);
 
-					// ²éÑ¯×éÔ±³É¹¦
+					// æŸ¥è¯¢ç»„å‘˜æˆåŠŸ
 					if (res != null) {
 						System.out.println(studentName + " is in " + res + ".");
 						pm.addItem("Successful search", 1);
@@ -246,7 +247,7 @@ public class Application {
 						logger.info("Successful search\n");
 					}
 
-					// ²éÑ¯×éÔ±Ê§°Ü
+					// æŸ¥è¯¢ç»„å‘˜å¤±è´¥
 					else {
 						System.out.println(studentName
 								+ " is not in the student list.");
@@ -258,7 +259,7 @@ public class Application {
 
 			}
 
-			// ´¦ÀíÎŞĞ§ÃüÁî
+			// å¤„ç†æ— æ•ˆå‘½ä»¤
 			else {
 				System.out.println("invalid order!");
 			}
