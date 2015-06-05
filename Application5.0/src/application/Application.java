@@ -1,6 +1,10 @@
 package application;
 
+import com.eva.me.cm.*;
+import edu.tongji.FaultManagement;
 import org.apache.log4j.Logger;
+import pm.PM;
+import src.com.team8.License.License;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -8,18 +12,13 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Scanner;
 
-import edu.tongji.FaultManagement;
-import pm.PM;
-import src.com.team8.License.License;
+//import com.manager.failure.FailureManager;
 
-import com.eva.me.cm.ConfigUtil;
-
-
-//FMç¬¬äºŒç»„ï¼ŒLicenseç¬¬å…«ç»„
+//FMµÚ¶ş×é£¬LicenseµÚ°Ë×é
 public class Application {
 	public static final Logger logger = Logger.getLogger("stdout");
 	public static final PM pm = new PM();
-	// å®šä¹‰å‘Šè­¦å¸¸é‡
+	// ¶¨Òå¸æ¾¯³£Á¿
 	public static final int pmPathConfig = 1;
 	public static final int licenseConfig = 2;
 	public static final int fmPathConfig = 3;
@@ -28,8 +27,8 @@ public class Application {
 
 	public static int fmInfo = 0;
 
-	
-	
+
+
 	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) throws IOException {
 		String oldurl = Application.class.getClassLoader().getResource("")
@@ -37,19 +36,12 @@ public class Application {
 		String url = oldurl.replace("bin/", "/");
 		System.setProperty("LOG_DIR", url);
 		FaultManagement fm = FaultManagement.getInstance();
-		
-		// CMè¯»å–é…ç½®ä¿¡æ¯
+
+		// CM¶ÁÈ¡ÅäÖÃĞÅÏ¢
 		System.out.println("Application running...");
 		logger.info("Application running...\n");
 		System.out.println("Reading configuration...");
-
-		
-		// CMè¯»å–å­¦ç”Ÿåˆ†ç»„
-		System.out.println("Reading student_group_file...");
-		//cm.ProcessFile("./studentlist.txt");
-		
-		
-		// PMå¼€å¯æ€§èƒ½ç»Ÿè®¡
+		// PM¿ªÆôĞÔÄÜÍ³¼Æ
 		pm.start();
 		String outpath = ConfigUtil.getInstance().getProperty("PMPath");
 		if (outpath != null)
@@ -92,7 +84,7 @@ public class Application {
 			}
 		}
 
-		// ä¸»æŸ¥è¯¢åŠŸèƒ½
+		// Ö÷²éÑ¯¹¦ÄÜ
 		Scanner scan = new Scanner(System.in);
 
 		while (true) {
@@ -102,11 +94,11 @@ public class Application {
 					.println("'q' to quit,'c' to change configuration,'s' to search student,'g' to search group");
 			String order = scan.nextLine();
 
-			// quitæ˜¯å¦é€€å‡º
+			// quitÊÇ·ñÍË³ö
 			if (order.equals("q"))
 				break;
 
-			// æ›´æ”¹é…ç½®
+				// ¸ü¸ÄÅäÖÃ
 			else if (order.equals("c")) {
 				System.out.println("Here are all the configuration you can change:");
 				System.out.println("PMInterval");
@@ -124,44 +116,44 @@ public class Application {
 				} catch (Exception e) {
 					// TODO: handle exception
 				}
-				// æ›´æ”¹é…ç½®
+				// ¸ü¸ÄÅäÖÃ
 				if (key.equals("FMPath")&&value!=null) {
-					ConfigUtil.getInstance().setProperty(key,value);
+					ConfigUtil.getInstance().setProperty(key, value);
 					fm.setLogDirPath(ConfigUtil.getInstance().getProperty("FMPath"));
-					System.out.println(key + "æ›´æ–°æˆåŠŸ");
-					logger.info(key + "æ›´æ–°æˆåŠŸ");
+					System.out.println(key + "¸üĞÂ³É¹¦");
+					logger.info(key + "¸üĞÂ³É¹¦");
 				} else if (key.equals("PMPath")&&value!=null) {
-					ConfigUtil.getInstance().setProperty(key,value);
+					ConfigUtil.getInstance().setProperty(key, value);
 					pm.setPath(ConfigUtil.getInstance().getProperty("PMPath"));
-					System.out.println(key + "æ›´æ–°æˆåŠŸ");
-					logger.info(key + "æ›´æ–°æˆåŠŸ");
+					System.out.println(key + "¸üĞÂ³É¹¦");
+					logger.info(key + "¸üĞÂ³É¹¦");
 				} else if (key.equals("License")&&value!=null) {
-					ConfigUtil.getInstance().setProperty(key,value);
+					ConfigUtil.getInstance().setProperty(key, value);
 					license = new License(Integer.parseInt(value));
-					System.out.println(key + "æ›´æ–°æˆåŠŸ");
-					logger.info(key + "æ›´æ–°æˆåŠŸ");
+					System.out.println(key + "¸üĞÂ³É¹¦");
+					logger.info(key + "¸üĞÂ³É¹¦");
 				} else if (key.equals("PMInterval")&&value!=null) {
-					pm.resetInterval(Long.parseLong(value));					
-					System.out.println(key + "æ›´æ–°æˆåŠŸ");
-					logger.info(key + "æ›´æ–°æˆåŠŸ");
+					pm.resetInterval(Long.parseLong(value));
+					System.out.println(key + "¸üĞÂ³É¹¦");
+					logger.info(key + "¸üĞÂ³É¹¦");
 				} else {
 					try {
-						System.out.println("æ›´æ–°é¡¹ä¸å­˜åœ¨");
-						logger.info("æ›´æ–°é¡¹ä¸å­˜åœ¨");
+						System.out.println("¸üĞÂÏî²»´æÔÚ");
+						logger.info("¸üĞÂÏî²»´æÔÚ");
 					} catch (Exception e) {
 						// TODO: handle exception
 					}
 				}
 			}
 
-			// æŸ¥è¯¢ç»„å
+			// ²éÑ¯×éÃû
 			else if (order.equals("g")) {
 				System.out.println("Please input the group name");
 				String groupName = scan.nextLine();
 				pm.addItem("Message received", 1);
 				logger.info("search \"" + groupName + "\"");
 
-				// Licenseæ˜¯å¦å¯ä»¥æä¾›æœåŠ¡
+				// LicenseÊÇ·ñ¿ÉÒÔÌá¹©·şÎñ
 				if (!license.inLicense()) {
 
 					System.out.println("Search service unabled.");
@@ -178,7 +170,7 @@ public class Application {
 					}
 					pm.addItem("Service permitted", 1);
 
-					// æŸ¥è¯¢ç»„å
+					// ²éÑ¯×éÃû
 					Iterator iterator = ConfigUtil.getInstance().showConfigFileContent().keySet().iterator();
 					System.out.println();
 					List<String> groupMember = new ArrayList<String>();
@@ -191,7 +183,7 @@ public class Application {
 							continue;
 						}
 					}
-					// ç»„åæŸ¥æ‰¾æˆåŠŸ
+					// ×éÃû²éÕÒ³É¹¦
 					if (groupMember.size() != 0) {
 						System.out.println(groupName + " contains:");
 						Iterator member = groupMember.iterator();
@@ -202,7 +194,7 @@ public class Application {
 						pm.addItem("Message responsed", 1);
 						logger.info("Successful search\n");
 					}
-					// ç»„åæŸ¥æ‰¾å¤±è´¥
+					// ×éÃû²éÕÒÊ§°Ü
 					else {
 						System.out.println(groupName + " doesn't exists!");
 						logger.info("failed search\n");
@@ -212,7 +204,7 @@ public class Application {
 				}
 			}
 
-			// æŸ¥è¯¢ç»„å‘˜
+			// ²éÑ¯×éÔ±
 			else if (order.equals("s")) {
 				System.out.println("Please input the student name");
 				String studentName = scan.nextLine();
@@ -220,7 +212,7 @@ public class Application {
 				logger.info("search \"" + studentName + "\"");
 				String res = ConfigUtil.getInstance().getProperty(studentName);
 
-				// Licenseæ˜¯å¦å¯ä»¥æä¾›æœåŠ¡
+				// LicenseÊÇ·ñ¿ÉÒÔÌá¹©·şÎñ
 				if (!license.inLicense()) {
 
 					System.out.println("Search service unabled.");
@@ -238,7 +230,7 @@ public class Application {
 					}
 					pm.addItem("Service permitted", 1);
 
-					// æŸ¥è¯¢ç»„å‘˜æˆåŠŸ
+					// ²éÑ¯×éÔ±³É¹¦
 					if (res != null) {
 						System.out.println(studentName + " is in " + res + ".");
 						pm.addItem("Successful search", 1);
@@ -246,7 +238,7 @@ public class Application {
 						logger.info("Successful search\n");
 					}
 
-					// æŸ¥è¯¢ç»„å‘˜å¤±è´¥
+					// ²éÑ¯×éÔ±Ê§°Ü
 					else {
 						System.out.println(studentName
 								+ " is not in the student list.");
@@ -258,7 +250,7 @@ public class Application {
 
 			}
 
-			// å¤„ç†æ— æ•ˆå‘½ä»¤
+			// ´¦ÀíÎŞĞ§ÃüÁî
 			else {
 				System.out.println("invalid order!");
 			}

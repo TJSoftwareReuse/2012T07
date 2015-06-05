@@ -8,5 +8,6 @@
 	<classpathentry kind="lib" path="lib/PM.jar"/>
 	<classpathentry kind="lib" path="lib/FM.jar"/>
 	<classpathentry kind="lib" path="lib/PropertyUtil.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

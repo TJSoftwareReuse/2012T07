@@ -1,3 +1,0 @@
-FMPath ./FM/
-PMPath ./PM/
-License 10

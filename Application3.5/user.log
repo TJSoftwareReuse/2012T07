@@ -247,4 +247,25 @@
 
   (2015-06-04 13:25:21,266) [INFO] -failed search
 
+  (2015-06-05 11:15:11,516) [DEBUG] -Initializing...
+  (2015-06-05 11:15:11,518) [INFO] -Log directory set!
+  (2015-06-05 11:15:11,520) [INFO] -Log directory path: F:\git_repository\2012T07\Application3.5\log
+  (2015-06-05 11:15:11,557) [DEBUG] -Creating log file...
+  (2015-06-05 11:15:11,559) [INFO] -New log file created!
+  (2015-06-05 11:15:11,560) [INFO] -Log file path: F:\git_repository\2012T07\Application3.5\log\2015-06-05_1.log
+  (2015-06-05 11:15:11,560) [DEBUG] -Create operation completed!
+  (2015-06-05 11:15:11,560) [DEBUG] -Initialization completed!
+  (2015-06-05 11:15:11,561) [INFO] -Application running...
+
+  (2015-06-05 11:15:11,572) [INFO] -Log directory set!
+  (2015-06-05 11:15:11,573) [INFO] -Log directory path: F:\git_repository\2012T07\Application3.5\FM
+  (2015-06-05 11:15:11,573) [DEBUG] -Creating log file...
+  (2015-06-05 11:15:11,575) [INFO] -New log file created!
+  (2015-06-05 11:15:11,576) [INFO] -Log file path: F:\git_repository\2012T07\Application3.5\FM\2015-06-05_1.log
+  (2015-06-05 11:15:11,576) [DEBUG] -Create operation completed!
+  (2015-06-05 11:15:17,298) [INFO] -search "方程"
+  (2015-06-05 11:15:17,300) [DEBUG] -Writing message to file...
+  (2015-06-05 11:15:17,301) [DEBUG] -Write operation completed!
+  (2015-06-05 11:15:17,301) [INFO] -Successful search
+
   

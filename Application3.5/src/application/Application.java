@@ -81,7 +81,7 @@ public class Application {
 
 		// FM
 		String FMoutpath = cm.SearchKey("FMPath");
-		if (FMoutpath != "")
+		if (FMoutpath != null)
 			fm.setLogDirPath(FMoutpath);
 		else {
 			System.out

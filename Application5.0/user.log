@@ -384,4 +384,126 @@
   (2015-06-05 10:48:58,999) [INFO] -search "Group7"
   (2015-06-05 10:48:59,001) [INFO] -Successful search
 
+  (2015-06-05 11:15:51,575) [DEBUG] -Initializing...
+  (2015-06-05 11:15:51,578) [INFO] -Log directory set!
+  (2015-06-05 11:15:51,579) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\log
+  (2015-06-05 11:15:51,620) [DEBUG] -Creating log file...
+  (2015-06-05 11:15:51,620) [INFO] -New log file created!
+  (2015-06-05 11:15:51,622) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\log\2015-06-05_1.log
+  (2015-06-05 11:15:51,622) [DEBUG] -Create operation completed!
+  (2015-06-05 11:15:51,623) [DEBUG] -Initialization completed!
+  (2015-06-05 11:15:51,623) [INFO] -Application running...
+
+  (2015-06-05 11:15:51,633) [WARN] -FM output path is not included in config file.
+  (2015-06-05 11:15:51,635) [DEBUG] -Writing message to file...
+  (2015-06-05 11:15:51,636) [DEBUG] -Write operation completed!
+  (2015-06-05 11:15:57,762) [INFO] -search "ÊñπÁ®ã"
+  (2015-06-05 11:15:57,763) [DEBUG] -Writing message to file...
+  (2015-06-05 11:15:57,764) [DEBUG] -Write operation completed!
+  (2015-06-05 11:15:57,765) [INFO] -failed search
+
+  (2015-06-05 11:18:02,665) [DEBUG] -Initializing...
+  (2015-06-05 11:18:02,667) [INFO] -Log directory set!
+  (2015-06-05 11:18:02,668) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\log
+  (2015-06-05 11:18:02,706) [DEBUG] -Creating log file...
+  (2015-06-05 11:18:02,706) [INFO] -New log file created!
+  (2015-06-05 11:18:02,708) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\log\2015-06-05_1.log
+  (2015-06-05 11:18:02,708) [DEBUG] -Create operation completed!
+  (2015-06-05 11:18:02,708) [DEBUG] -Initialization completed!
+  (2015-06-05 11:18:02,708) [INFO] -Application running...
+
+  (2015-06-05 11:18:02,721) [WARN] -FM output path is not included in config file.
+  (2015-06-05 11:18:02,722) [DEBUG] -Writing message to file...
+  (2015-06-05 11:18:02,724) [DEBUG] -Write operation completed!
+  (2015-06-05 11:18:06,473) [INFO] -search "ÊñπÁ®ã"
+  (2015-06-05 11:18:06,475) [DEBUG] -Writing message to file...
+  (2015-06-05 11:18:06,475) [DEBUG] -Write operation completed!
+  (2015-06-05 11:18:06,476) [INFO] -failed search
+
+  (2015-06-05 11:18:12,811) [INFO] -search "Group7"
+  (2015-06-05 11:18:12,814) [INFO] -Successful search
+
+  (2015-06-05 11:18:40,322) [DEBUG] -Initializing...
+  (2015-06-05 11:18:40,325) [INFO] -Log directory set!
+  (2015-06-05 11:18:40,326) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\log
+  (2015-06-05 11:18:40,364) [DEBUG] -Creating log file...
+  (2015-06-05 11:18:40,364) [INFO] -New log file created!
+  (2015-06-05 11:18:40,365) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\log\2015-06-05_1.log
+  (2015-06-05 11:18:40,366) [DEBUG] -Create operation completed!
+  (2015-06-05 11:18:40,366) [DEBUG] -Initialization completed!
+  (2015-06-05 11:18:40,366) [INFO] -Application running...
+
+  (2015-06-05 11:18:40,378) [WARN] -FM output path is not included in config file.
+  (2015-06-05 11:18:40,379) [DEBUG] -Writing message to file...
+  (2015-06-05 11:18:40,380) [DEBUG] -Write operation completed!
+  (2015-06-05 11:26:46,918) [DEBUG] -Initializing...
+  (2015-06-05 11:26:46,920) [INFO] -Log directory set!
+  (2015-06-05 11:26:46,921) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\log
+  (2015-06-05 11:26:46,961) [DEBUG] -Creating log file...
+  (2015-06-05 11:26:46,962) [INFO] -New log file created!
+  (2015-06-05 11:26:46,963) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\log\2015-06-05_1.log
+  (2015-06-05 11:26:46,963) [DEBUG] -Create operation completed!
+  (2015-06-05 11:26:46,963) [DEBUG] -Initialization completed!
+  (2015-06-05 11:26:46,964) [INFO] -Application running...
+
+  (2015-06-05 11:26:46,975) [INFO] -Log directory set!
+  (2015-06-05 11:26:46,976) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\FM
+  (2015-06-05 11:26:46,977) [DEBUG] -Creating log file...
+  (2015-06-05 11:26:46,978) [INFO] -New log file created!
+  (2015-06-05 11:26:46,979) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\FM\2015-06-05_1.log
+  (2015-06-05 11:26:46,979) [DEBUG] -Create operation completed!
+  (2015-06-05 11:26:54,916) [INFO] -search "Group7"
+  (2015-06-05 11:26:54,917) [DEBUG] -Writing message to file...
+  (2015-06-05 11:26:54,919) [DEBUG] -Write operation completed!
+  (2015-06-05 11:26:54,922) [INFO] -Successful search
+
+  (2015-06-05 11:27:33,481) [DEBUG] -Initializing...
+  (2015-06-05 11:27:33,484) [INFO] -Log directory set!
+  (2015-06-05 11:27:33,485) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\log
+  (2015-06-05 11:27:33,523) [DEBUG] -Creating log file...
+  (2015-06-05 11:27:33,524) [INFO] -New log file created!
+  (2015-06-05 11:27:33,524) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\log\2015-06-05_1.log
+  (2015-06-05 11:27:33,525) [DEBUG] -Create operation completed!
+  (2015-06-05 11:27:33,525) [DEBUG] -Initialization completed!
+  (2015-06-05 11:27:33,525) [INFO] -Application running...
+
+  (2015-06-05 11:27:33,537) [INFO] -Log directory set!
+  (2015-06-05 11:27:33,538) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\FM
+  (2015-06-05 11:27:33,539) [DEBUG] -Creating log file...
+  (2015-06-05 11:27:33,539) [INFO] -New log file created!
+  (2015-06-05 11:27:33,540) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\FM\2015-06-05_1.log
+  (2015-06-05 11:27:33,540) [DEBUG] -Create operation completed!
+  (2015-06-05 11:27:38,980) [INFO] -search "Œ‚“›∑∆"
+  (2015-06-05 11:27:38,981) [DEBUG] -Writing message to file...
+  (2015-06-05 11:27:38,983) [DEBUG] -Write operation completed!
+  (2015-06-05 11:27:38,983) [INFO] -failed search
+
+  (2015-06-05 11:28:42,001) [DEBUG] -Initializing...
+  (2015-06-05 11:28:42,004) [INFO] -Log directory set!
+  (2015-06-05 11:28:42,005) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\log
+  (2015-06-05 11:28:42,042) [DEBUG] -Creating log file...
+  (2015-06-05 11:28:42,042) [INFO] -New log file created!
+  (2015-06-05 11:28:42,043) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\log\2015-06-05_1.log
+  (2015-06-05 11:28:42,043) [DEBUG] -Create operation completed!
+  (2015-06-05 11:28:42,044) [DEBUG] -Initialization completed!
+  (2015-06-05 11:28:42,044) [INFO] -Application running...
+
+  (2015-06-05 11:28:56,184) [DEBUG] -Initializing...
+  (2015-06-05 11:28:56,187) [INFO] -Log directory set!
+  (2015-06-05 11:28:56,188) [INFO] -Log directory path: F:\git_repository\2012T07\Application5.0\log
+  (2015-06-05 11:28:56,226) [DEBUG] -Creating log file...
+  (2015-06-05 11:28:56,227) [INFO] -New log file created!
+  (2015-06-05 11:28:56,228) [INFO] -Log file path: F:\git_repository\2012T07\Application5.0\log\2015-06-05_1.log
+  (2015-06-05 11:28:56,228) [DEBUG] -Create operation completed!
+  (2015-06-05 11:28:56,228) [DEBUG] -Initialization completed!
+  (2015-06-05 11:28:56,228) [INFO] -Application running...
+
+  (2015-06-05 11:28:56,238) [WARN] -FM output path is not included in config file.
+  (2015-06-05 11:28:56,239) [DEBUG] -Writing message to file...
+  (2015-06-05 11:28:56,241) [DEBUG] -Write operation completed!
+  (2015-06-05 11:29:20,399) [INFO] -search "∑Ω≥Ã"
+  (2015-06-05 11:29:20,400) [DEBUG] -Writing message to file...
+  (2015-06-05 11:29:20,401) [DEBUG] -Write operation completed!
+  (2015-06-05 11:29:20,401) [INFO] -failed search
+
   
